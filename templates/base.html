@@ -11,13 +11,17 @@
     <link rel="stylesheet" href={% static "css/bootstrap.css" %} />
     <!-- Custom -->
     <link rel="stylesheet" href={% static "css/style.css" %} />
+
     <title>BC Health Care</title>
   </head>
-
   <bdoy>
+    <!-- related topbar -->
     {% include 'partials/_topbar.html' %} 
+    <!-- related navbar -->
     {% include 'partials/_navbar.html' %}
+    <!-- related content -->
     {% block content %} {% endblock %} 
+    <!-- related footer -->
     {% include 'partials/_footer.html' %}
 
     <script src={% static "js/jquery-3.3.1.min.js" %}></script>
