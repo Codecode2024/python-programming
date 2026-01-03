@@ -81,7 +81,7 @@
       {% endfor %}
       {% else %}
       <div class="col-md-12">
-        <p>No listings available at the moment. Please check back later.</p>
+        <h2>No Clinic Available</h2>
       </div>
       {% endif %}
 
@@ -116,6 +116,7 @@
           {% endif %}
           {% endfor %}
 
+          
           {% if listings.has_next %}
           <li class="page-item">
             <a class="page-link" href="?page={{ listings.next_page_number }}">&raquo;</a>
