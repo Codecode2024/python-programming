@@ -37,7 +37,7 @@ class Listing(models.Model):
         return self.title
     
     def tag_list(self):
-        return u", ".join(tag.name for tag in self.service.all())
+        return u", ".join(tag.name for tag in self.services.all())
     
     
 
